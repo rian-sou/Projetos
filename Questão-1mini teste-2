@@ -1,19 +1,7 @@
 #include <iostream>
 using namespace std;        
 
-float somaDeFloats(float a, float b) {
-if (a == b)
-  return (a+b)*2;
-  else 
-  return a + b;
-}
-
-
-
-
-
-
-
+float somaDeFloats(float a, float b);
 
 int main() {
 float a = 30;
@@ -27,4 +15,12 @@ float s = somaDeFloats(a,b);
 cout << "a + b = " << s;
 
 return 0;
+}
+
+
+float somaDeFloats(float a, float b) {
+if (a == b)
+  return (a+b)*2;
+  else 
+  return a + b;
 }
