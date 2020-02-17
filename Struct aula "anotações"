@@ -1,1 +1,16 @@
 
+// todo struct tem q ter letra maiúscula
+// struct eh basicamente eu criando uma nova variável tipo a int, float etc
+// quando eu declaro um struct no programa, agora ele é como se fosse uma variavel como int, float etc
+// revisar ponteiro,
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+
+    cout << "oi, mundo!";
+
+    return 0;
+}
