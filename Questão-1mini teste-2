@@ -10,7 +10,7 @@ float b = 30;
 
 cin >> a >> b;
 
-float s = somaDeFloats(a,b);
+float soma = somaDeFloats(a,b);
 
 cout << "a + b = " << s;
 
