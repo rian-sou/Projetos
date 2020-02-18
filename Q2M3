@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+struct DadosAlunos{
+string nome;
+int matricula;
+int nota1;
+int nota2;
+
+void insereDados(string stnome, int stmatricula, int stnota1, int stnota2){
+nome = stnome;
+matricula = stmatricula;
+nota1 = stnota1;
+nota2 = stnota2;
+}
+void mostra(){
+cout << "Nome do aluno............: " << nome << endl;
+cout << "Matricula do aluno.......: " << matricula << endl;
+cout << "Primeira nota do aluno...: " << nota1 << endl;
+cout << "Segunda nota do aluno....: " << nota2 << endl;
+}
+};
+
+
+
+
+
+
+
+int main(){
+DadosAlunos aluno1;
+cout << "informe os dados do primeiro aluno. Nome, matricula, primeira e segunda nota, respectivamente " << endl;
+cin >> 
+
+cout << aluno1.mostra;
+
+    return 0;
+}
