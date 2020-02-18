@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;        
 
+int main () {
+
 float somaDeFloats(float a, float b);
 
 int main() {
@@ -15,6 +17,7 @@ float soma = somaDeFloats(a,b);
 cout << "a + b = " << s;
 
 return 0;
+
 }
 
 
