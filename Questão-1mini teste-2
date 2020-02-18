@@ -4,8 +4,8 @@ using namespace std;
 float somaDeFloats(float a, float b);
 
 int main() {
-float a = 30;
-float b = 30;
+float a;
+float b;
 
 
 cin >> a >> b;
