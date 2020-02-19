@@ -1,5 +1,7 @@
 #include <iostream>
+
 using namespace std;
+
 
 struct DadosAlunos{
 string nome;
@@ -7,32 +9,45 @@ int matricula;
 int nota1;
 int nota2;
 
-void insereDados(string stnome, int stmatricula, int stnota1, int stnota2){
-nome = stnome;
-matricula = stmatricula;
-nota1 = stnota1;
-nota2 = stnota2;
+int media(int n1, int n2){
+nota1 = n1;
+nota2 = n2;
+while (n1 && n2 > 10){
+
+   cout << "Por favor, insira notas menores ou iguais a 10\n";
+
 }
-void mostra(){
-cout << "Nome do aluno............: " << nome << endl;
-cout << "Matricula do aluno.......: " << matricula << endl;
-cout << "Primeira nota do aluno...: " << nota1 << endl;
-cout << "Segunda nota do aluno....: " << nota2 << endl;
+int resul;
+
+(n1+n2)/2 = resul;
+
+if(resul >= 7){
+
+    return cout << "parabens, sua nota foi " << resul <<"voce foi aprovado"<<endl;
+
+else if(resul <= 6){
+return cout << "sua nota foi " << resul << "estude mais";}
 }
+
+}
+
 };
 
 
-
-
-
-
-
 int main(){
+
 DadosAlunos aluno1;
-cout << "informe os dados do primeiro aluno. Nome, matricula, primeira e segunda nota, respectivamente " << endl;
-cin >> 
 
-cout << aluno1.mostra;
 
-    return 0;
+cout << "informe os dados do primeiro aluno. Nome, matricula, primeira e segunda nota, respectivamente\n ";
+cin >> aluno1.nome >> aluno1.matricula >> aluno1.nota1 >> aluno1.nota2;
+cout << aluno1.nome << aluno1.matricula << aluno1.nota1 << aluno1.nota2;
+aluno1.media(n1,n2) = mf;
+
+cout << mf;
+
+return 0;
+
 }
+
+
