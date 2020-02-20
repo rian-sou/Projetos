@@ -2,52 +2,48 @@
 
 using namespace std;
 
-
-struct DadosAlunos{
-string nome;
-int matricula;
-int nota1;
-int nota2;
-
-int media(int n1, int n2){
-nota1 = n1;
-nota2 = n2;
-while (n1 && n2 > 10){
-
-   cout << "Por favor, insira notas menores ou iguais a 10\n";
-
-}
-int resul;
-
-(n1+n2)/2 = resul;
-
-if(resul >= 7){
-
-    return cout << "parabens, sua nota foi " << resul <<"voce foi aprovado"<<endl;
-
-else if(resul <= 6){
-return cout << "sua nota foi " << resul << "estude mais";}
-}
-
-}
-
+struct DadosAlunos
+{
+    string nome;
+    int matricula;
+    float nota1;
+    float nota2;
 };
 
+int main()
+{
 
-int main(){
+    DadosAlunos aluno1;
+    float resul;
 
-DadosAlunos aluno1;
+    cout << "informe os dados do primeiro aluno. Nome, matricula, primeira e segunda nota, respectivamente\n ";
+    cin >> aluno1.nome >> aluno1.matricula >> aluno1.nota1 >> aluno1.nota2;
 
+    while (aluno1.nota1 && aluno1.nota2 > 10)
+    {
 
-cout << "informe os dados do primeiro aluno. Nome, matricula, primeira e segunda nota, respectivamente\n ";
-cin >> aluno1.nome >> aluno1.matricula >> aluno1.nota1 >> aluno1.nota2;
-cout << aluno1.nome << aluno1.matricula << aluno1.nota1 << aluno1.nota2;
-aluno1.media(n1,n2) = mf;
+        cout << "Por favor, insira notas menores ou iguais a 10\n";
+        cin >> aluno1.nota1 >> aluno1.nota2;
+    }
 
-cout << mf;
+    resul = (aluno1.nota1 + aluno1.nota2) / 2;
 
-return 0;
+    if (resul >= 7)
+    {
 
+        cout << "Aluno..." << aluno1.nome << endl;
+        cout << "Matricula..." << aluno1.matricula << endl;
+        cout << "Primeira nota..." << aluno1.nota1 << endl;
+        cout << "Segunda nota..." << aluno1.nota2 << endl
+             << "parabens, sua nota foi " << resul << " voce foi aprovado" << endl;
+    }
+    else if (resul <= 6)
+    {
+        cout << "Aluno... " << aluno1.nome << endl;
+        cout << "Matricula... " << aluno1.matricula << endl;
+        cout << "Primeira nota... " << aluno1.nota1 << endl;
+        cout << "Segunda nota... " << aluno1.nota2 << endl<< " sua nota foi " << resul << " estude mais..." << endl;
+    }
+
+    return 0;
 }
-
-
