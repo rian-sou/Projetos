@@ -5,7 +5,7 @@ using namespace std;
 struct DadosAlunos
 {
     string nome;
-    long matricula;
+    long double matricula;
     int nota1;
     int nota2;
 };
@@ -21,7 +21,7 @@ int main()
   for (i = 0;i<5;i++){
     cin >> aluno1.nome >> aluno1.matricula >> aluno1.nota1 >> aluno1.nota2;
   
-    while (aluno1.nota1 && aluno1.nota2 > 10)
+    while (aluno1.nota1 || aluno1.nota2 > 11)
     {
 
         cout << "Por favor, insira notas menores ou iguais a 10\n";
